@@ -1,0 +1,783 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+header,
+nav,
+section,
+.content-container,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 8em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+
+
+nav {
+    justify-content: space-between;
+    width: 90%;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid #ff0000;
+}
+
+/*--------главная 7_1--------*/
+.container_1 /*well*/
+{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.container_1 .box /*well*/
+{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+}
+
+.container_1 .box::before /*well*/
+{
+    content:' ';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.container_1 .box::after /*well*/
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+}
+
+.container_1.box:hover:before,
+.container_1 .box:hover:after
+{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+
+}
+
+.container_1 .box:nth-child(1):before,
+.container_1 .box:nth-child(1):after
+{
+    background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+
+.container_1 .box:nth-child(2):before,
+.container_1 .box:nth-child(2):after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.container_1 .box:nth-child(3):before,
+.container_1 .box:nth-child(3):after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+.container_1 .box span /*well*/
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.container_1 .box span::before /*well*/
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.1s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+
+.container_1 .box:hover span::before /*well*/
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.container_1 .box span::after /*well*/
+{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    animation-delay: -1s;
+}
+
+.container_1 .box:hover span:after/*well*/
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+@keyframes animate
+{
+    0%, 100%
+    {
+        transform: translateY(10px);
+    }
+
+    50%
+    {
+        transform: translate(-10px);
+    }
+}
+
+.container_1 .box .content /*well*/
+{
+    margin: 60px;
+    position: relative;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.container_1 .box:hover .content/*well*/
+{
+    left: -25px;
+    padding: 60px 40px;
+}
+
+.container_1 .box .content h2 /*well*/
+{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.container_1 .box .content p /*well*/
+{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container_1 .box .content a /*well*/
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.container_1 .box .content a:hover /*well*/
+{
+    background: #ffcf4d;
+    border: 1px solid rgba(255, 0, 88, 0.4);
+    box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+
+
+/*Раздел 2 - хтмл пр7_2*/
+
+
+
+
+
+
+/* ========== Раздел 3- пр7_4==========*/
+
+.fas {
+    width: 32px;
+}
+#section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.box {
+    position: relative;
+}
+
+.square {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    animation: square 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes square {
+    0%,100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.square:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: -45px;
+}
+
+.square:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 105px;
+    left: -125px;
+    z-index: 2;
+}
+
+.square:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    bottom: 85px;
+    right: -45px;
+    z-index: 2;
+}
+
+.square:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    bottom: 35px;
+    left: -95px;
+}
+
+.square:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -25px;
+}
+
+.square:nth-child(6) {
+    width: 85px;
+    height: 85px;
+    top: 165px;
+    right: -155px;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    padding: 50px;
+    width: 260px;
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 2%
+    );
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.inputBx {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 10px;
+    padding-left: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.password-control {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+    transition: 0.5s;
+}
+
+.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+    transition: 0.5s;
+}
+
+.fas {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+
+input[type="submit"] {
+    background: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    box-shadow: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(115deg,
+    rgba(0,0,0,0.10),
+    rgba(255,255,255,0.25));
+    color: #fff;
+    transition: .5s;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+
+
+input:focus ~ span,
+input:valid ~ span {
+    transform: translateX(-30px) translateY(-25px);
+    font-size: 12px;
+}
+
+
+a:hover {
+    background-color: #000;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.remember {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+
+/*********7_6 - карточка с эффектом размытия***************/
+
+.gradient-card_4{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin: 100px;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Oswald;
+    width: 300px; padding: 40px;
+    color: #ffffff;
+    background: linear-gradient(60deg, white, #f105d2);
+    border-radius: 10px; border: 1px;
+    box-shadow:10px 20px #1e1e1e;
+    /*background: white;*/
+}
+
+h2 {
+    font-family: Oswald;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #fa03e2;
+}
+h1 {
+    font-family: Oswald;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    opacity:0.5;
+}
+h3 {
+    font-family: Oswald;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: white;
+}
+.section-1{
+    align-items: flex-start;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+}
+.gradient-card_4{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+
+.gradient-card_4{
+    list-style: none;
+    position: relative;
+}
+
+.gradient-card_4:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+.gradient-card_4:hover{
+    filter: brightness(0.5)  contrast(1.2) blur(10px);
+}
+.gradient-card_4::after
+{
+    content: '';
+    display: block;
+
+}
+
+.gradient-card_4{
+    top:50px;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05) translateZ(0);
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition:
+            filter 200ms linear,
+            transform 200ms linear;
+}
+
+.text-container{
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+/*---------карточки с затемнением 7-8--------------*/
+.gradient-card_0{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin: 100px;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Oswald;
+    background: linear-gradient(90deg, #19193f, #141464, #0029c7);
+    border-block-end: 3px solid grey;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 40px;
+    /*background: white;*/
+}
+
+
+.gradient-card_0:before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+}
+
+.gradient-card_0:hover:before{
+    left:-50%;
+    transform: skewX(-5deg);
+}
+
+
+.gradient-card_0 .content{
+    position:absolute;
+    top:15px;
+    left:15px;
+    right:15px;
+    bottom:15px;
+    border:1px solid #f0a591;
+    padding:20px;
+    text-align:center;
+    box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+
+}
+
+.gradient-card_0 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.gradient-card_0 span:nth-child(1)
+{
+    transform:rotate(0deg);
+}
+
+.gradient-card_0  span:nth-child(2)
+{
+    transform:rotate(90deg);
+}
+
+.gradient-card_0 span:nth-child(3)
+{
+    transform:rotate(180deg);
+}
+
+.gradient-card_0 span:nth-child(4)
+{
+    transform:rotate(270deg);
+}
+
+.gradient-card_0 span:before
+{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #50dfdb;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform:scaleX(0);
+        transform-origin: left;
+    }
+    50%
+    {
+        transform:scaleX(1);
+        transform-origin: left;
+    }
+    50.1%
+    {
+        transform:scaleX(1);
+        transform-origin: right;
+
+    }
+
+    100%
+    {
+        transform:scaleX(0);
+        transform-origin: right;
+
+    }
+
+
+}
+h2 {
+    font-family: Oswald;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #030331;
+}
+h1 {
+    font-family: Oswald;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    opacity:0.5;
+}
+h3 {
+    font-family: Oswald;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: white;
+}
+.section-1{
+    align-items: flex-start;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+}
+.gradient-card_0{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+
+.gradient-card_0{
+    list-style: none;
+    position: relative;
+}
+
+.gradient-card_0:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+.gradient-card_0:hover{
+    filter: brightness(0.5)  contrast(1.5);
+}
+.gradient-card_0::after
+{
+    content: '';
+    display: block;
+
+}
+
+.gradient-card_0{
+    top:50px;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05) translateZ(0);
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition:
+            filter 200ms linear,
+            transform 200ms linear;
+}
+
+.text-container{
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+}

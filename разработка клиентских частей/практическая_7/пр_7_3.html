@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <a id="logo-ref" href="#"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3698/3698156.png" alt="Логотип"></a>
+    <nav>
+        <a href="пр_7_1.html">Главная</a>
+        <a href="пр_7_2.html">Раздел 1</a>
+        <a href="пр_7_3.html">Раздел 2</a>
+        <a href="пр_7_4.html">Раздел 3</a>
+        <a href="пр_7.5.html">Раздел 4</a>
+        <a href="пр_7_6.html">Раздел 5</a>
+        <a href="пр_7_7.html">Раздел 6</a>
+        <a href="пр_7_8.html">Раздел 7</a>
+        <a href="пр_7_9.html">Раздел 8</a>
+    </nav>
+</header>
+
+<section id="section">
+    <a class="glassIco" href="#"><img id="log" src="twitter.png"><i class="fab fa-twitter-f"></i></a>
+    <a class="glassIco" href="#"><img id="log1" src="Inst.png"><i class="fab fa-instagram"></i></a>
+    <a class="glassIco" href="#"><img id="log2" src="facebook.png"><i class="fab fa-facebook-in"></i></a>
+    <a class="glassIco" href="#"><img id="log3" src="VK.png"><i class="fab fa-vk"></i></a>
+    <a class="glassIco" href="#"><img id="log4" src="tiktok.png"><i class="fab fa-whatsapp"></i></a>
+</section>
+<style>
+    #log {
+        position: absolute;
+        width: 50px;
+        margin: 25px;
+        transition: 0.3s;
+    }
+    #log:hover {
+
+        transform: scale(1.2);
+    }
+    #log1 {
+        position: absolute;
+        width: 50px;
+        margin: 25px;
+        transition: 0.3s;
+    }
+    #log1:hover {
+        transform: scale(1.2);
+    }
+    #log2 {
+        position: absolute;
+        width: 50px;
+        margin: 25px;
+        transition: 0.3s;
+    }
+    #log2:hover {
+        transform: scale(1.2);
+    }
+    #log3 {
+        position: absolute;
+        width: 50px;
+        margin: 25px;
+        transition: 0.3s;
+    }
+    #log3:hover {
+        transform: scale(1.2);
+    }
+    #log4{
+        position: absolute;
+        width: 50px;
+        margin: 25px;
+        transition: 0.3s;
+    }
+    #log4:hover {
+        transform: scale(1.2);
+    }
+
+    .glassIco {
+        --width: 100px;
+        width: var(--width);
+        height: var(--width);
+        font-size: 30px;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.05);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        box-shadow: 0 20px 30px rgb(1, 1, 3);
+        text-decoration: none;
+        margin: 100px;
+        overflow: hidden;
+
+    }
+    .glassIco, .glassIco * {
+        box-sizing: border-box;
+        transition: 200ms;
+    }
+    .glassIco:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1000%;
+        height: 100%;
+        background: linear-gradient(deeppink,orange);
+        filter: blur(0px);
+        transition: 800ms;
+        transform: skewX(0deg) translateX(calc(var(--width) + 50%));
+    }
+
+    .glassIco:hover:before {
+        transform: skewX(60deg) translateX(calc(var(--width) * -1 - 50%));
+    }
+</style>
+</body>
+</html>

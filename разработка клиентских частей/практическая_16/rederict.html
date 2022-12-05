@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Логин</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background: #b3cff3;
+      color: white;
+    }
+    header,
+    nav,
+    section,
+    .content-container,
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ========== Menu ==========*/
+    header {
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      padding: 1em 8em;
+      background: #2a4862;
+      box-shadow: 0 5px 20px 5px rgba(4, 8, 16, 0.3);
+    }
+    nav {
+      justify-content: space-between;
+      width: 100%;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 1em 2em;
+      border: 1px solid transparent;
+      border-radius: 0.3em;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      border: 1px solid #5473f0;
+    }
+
+    /* ========== Hero Section ==========*/
+    section {
+      width: 100%;
+      height: 100vh;
+    }
+
+    /*логин*/
+    #login {
+
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    .modal-body {
+      display: flex;
+      padding: 0;
+      border-radius: 4rem;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+
+    form {
+      font-size: 1.3em;
+      border-radius: 10px;
+      margin: 50px auto;
+      width: 400px;
+      padding: 30px;
+    }
+
+    .form-label {
+      display: flex;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .column#main {
+      background: linear-gradient(#18315e, rgba(37, 64, 194, 0.64), rgba(56, 106, 218, 0.76));
+      flex: 75%;
+      padding: 50px;
+      border: 3px solid #152e56;
+      box-shadow: 10px 6px 20px 10px rgba(12, 12, 152, 0.53);
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      background: #6dd6d1;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 10px 25px #577eab, 0px -10px 25px rgba(97, 106, 225, 0.43), inset 0px -5px 10px #576fab, inset 0px 5px 10px #4a5d9a;
+      font-family: 'Damion', cursive;
+      color: white;
+      font-size: 20px;
+      transition: 500ms;
+    }
+
+    button:hover {
+      border: 2px solid #6dd6d1;
+      animation: hueRotation 2s linear infinite;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    #main .form-control {
+      border-radius: 0;
+      background: white;
+      flex: 75%;
+      border-radius: 10px;
+      border: 3px solid #060672;
+      box-shadow: 10px 6px 20px 10px rgba(21, 21, 80, 0.53);
+      font-size: .9em;
+    }
+
+    .btn {
+      text-transform: uppercase;
+      border-radius: .15rem;
+      width: 200px;
+      padding: .150rem .75rem;
+      margin: 30px auto;
+      font-family: 'PT Sans', sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .btn-primary {
+      border-radius: 15px;
+      border-color: rgba( 255, 255, 255, 0);
+      background: #36cff1; /* Old browsers */
+      background: -moz-linear-gradient(left, #36c5f1 0%, #0c26b4 99%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #36c5f1 0%, #0c26b4 99%); /* Chrome10-25,Safari5.1-6 */
+
+    }
+
+    .btn-primary:hover {
+      border-color: rgba( 255, 255, 255, 0);
+    }
+
+
+    .js-validate-error-label {
+      position: absolute;
+      right: 5px;
+      top: 100%;
+    }
+
+    .form-label span {
+      flex-grow: 1;
+      display: inline-block;
+    }
+
+    .form-label input:not([type="file"]) {
+      border: none;
+      border-bottom: 1px solid #101070;
+      border-radius: 0;
+    }
+
+    .form-label input[type="file"] {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+    }
+
+    .file-label span {
+      border: 1px solid #101070;
+      display: inline-block;
+      padding: 5px 10px;
+      flex-grow: 0;
+      cursor: pointer;
+    }
+
+    .form button {
+      background-color:#101070;
+      color: #fff;
+      border: none;
+      padding: 5px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+    /* ========== Footer ==========*/
+    footer {
+      background: #161a20;
+      padding: 3em;
+    }
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="login.html">Логин</a>
+    <a href="news.html">Новости</a>
+  </nav>
+</header>
+<section id="login">
+  <form action="mail.php" enctype="multipart/form-data" class="form" method="POST">
+    <output type="hidden" name="admin_email[]" value="maxgraph23@gmail.com"></output>
+    <output type="hidden" name="form_subject" value="Тема письма"></output>
+    <h1 style="color: black">Добро пожаловать!</h1><br><br>
+    <label class="form-label">
+      <span style="color: black">Ваше имя: Салидарх</span>
+      <output type="text" name="name"></output>
+    </label>
+    <span style="color: black">Ваш номер телефона: 8-999-999-99-99</span>
+    <label class="form-label">
+      <output type="tel" data-validate-field="tel" name="tel"></output>
+    </label>
+    <label class="form-label">
+      <span style="color: black">Ваш email: chuchu@mail.ru</span>
+      <output type="email" data-validate-field="email" name="email"></output>
+    </label>
+    <label class="form-label">
+      <span style="color: black">Состояние чек-бокса: on</span>
+      <output type="email" data-validate-field="email" name="email"></output>
+    </label>
+  </form>
+  <script src="inputmask.min.js"></script>
+  <script src="just-validate.min.js"></script>
+  <script src="script.js"></script>
+  <script src="inputmask.min.js"></script>
+  <script src="just-validate.min.js"></script>
+  <script src="script.js"></script>
+</section>
+
+<footer>2021© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

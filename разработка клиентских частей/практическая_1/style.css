@@ -1,0 +1,21 @@
+html {    background-color: #554433 }
+.two {
+    font-family: "Monospaced";
+    color: #ff9030;
+    font-size: 18px;
+}
+.three {
+    font-family: "Arial";
+    color: #f000a0;
+    font-size: 20px;
+}
+h2 {
+    font-family: "Monospaced";
+    color: #f000ff;
+    font-size: 40px;
+}
+h3 {
+    font-family: "Times New Roman";
+    color: #10f010;
+    font-size: 34px;
+}

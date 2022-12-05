@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+        function text_limit(field, id, limit) {
+            var fieldWidth = parseInt(field.offsetWidth);
+            var count_char = field.value.length;
+
+            if (count_char>limit) {
+                field.value = field.value.substring(0, limit);
+                text_limit(field, id, limit);
+            }
+            else {
+                var percent = parseInt(100-((limit-count_char)*100)/limit);
+                document.getElementById(id).style.width = parseInt((fieldWidth*percent)/100) + "px";
+                document.getElementById(id).innerHTML = "Limit:&nbsp;" + percent + "%";
+
+                //Для использования своего собственного блока DIV
+                document.getElementById("id1").style["width"] = parseInt((500*percent)/100) + "px";
+                document.getElementById("id1").innerHTML = "Использовано:&nbsp;" + percent + "%";
+            }
+        }
+    </script>
+    <script>
+        var myText = document.getElementById("my-text");
+        var result = document.getElementById("result");
+        var limit = 100;
+        result.textContent = 0 + "/" + limit;
+        myText.addEventListener("input",function(){
+
+            var textLength = myText.value.length;
+
+            result.textContent = textLength + "/" + limit;
+
+            if(textLength > limit){
+                myText.style.borderColor = "#ff2851";
+                result.style.color = "#ff2851";
+            }
+            else{
+                myText.style.borderColor = "#31821b";
+                result.style.color = "#31821b";
+            }
+        });
+    </script>
+
+    <script>
+        let links = document.querySelectorAll('.menu a'),
+            ind = document.querySelector('.indicator');
+
+        links.forEach(item => {
+            item.addEventListener('mouseenter', (e) => {
+                moveInd(e.target);
+            });
+        });
+
+        function moveInd(el) {
+            ind.style.width = `${el.offsetWidth}px`;
+            ind.style.left = `${el.offsetLeft}px`;
+        }
+    </script>
+
+    <script>
+
+        function first() {
+
+            document.getElementById("second_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+
+            document.getElementById("first").setAttribute("style", "display: none");
+
+            document.getElementById("first_yelloy").setAttribute("style", "display: block");
+
+        }
+
+        function first_yelloy() {
+
+            document.getElementById("second_hide").setAttribute("style", "display: none");
+
+            document.getElementById("first_yelloy").setAttribute("style", "display: none");
+
+            document.getElementById("first").setAttribute("style", "display: block");
+
+        }
+
+    </script>
+
+    <script>
+
+        function first1() {
+
+            document.getElementById("second_hide1").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+
+            document.getElementById("first1").setAttribute("style", "display: none");
+
+            document.getElementById("first_yelloy1").setAttribute("style", "display: block");
+
+        }
+
+        function first_yelloy1() {
+
+            document.getElementById("second_hide1").setAttribute("style", "display: none");
+
+            document.getElementById("first_yelloy1").setAttribute("style", "display: none");
+
+            document.getElementById("first1").setAttribute("style", "display: block");
+
+        }
+    </script>
+
+    <script>
+
+        function first2() {
+
+            document.getElementById("second_hide2").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+
+            document.getElementById("first2").setAttribute("style", "display: none");
+
+            document.getElementById("first_yelloy2").setAttribute("style", "display: block");
+
+        }
+
+        function first_yelloy2() {
+
+            document.getElementById("second_hide2").setAttribute("style", "display: none");
+
+            document.getElementById("first_yelloy2").setAttribute("style", "display: none");
+
+            document.getElementById("first2").setAttribute("style", "display: block");
+
+        }
+    </script>
+    <title>Работа с Flexbox</title>
+    <style>
+        .gradient-card {
+            transition: 1s; /* Время эффекта */
+        }
+        .gradient-card:hover {
+            background: radial-gradient(circle at 90% 0%, #e187cf, #d207b1 15%, #4b4b4b 0%);
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+
+
+    <navi>
+        <a href="#home"><IMG class="displayed" src="главная.png" width="30" height="30" alt="Не видно изображения">Главная</a>
+        <a href="#section-1"><IMG class="displayed" src="контакты.png" width="30" height="30" alt="Не видно изображения">Раздел 1</a>
+        <a href="#section-2"><IMG class="displayed" src="смс.png" width="20" height="20" alt="Не видно изображения">Раздел 2</a>
+        <a href="#section-3"><IMG class="displayed" src="настройки.png" width="30" height="30" alt="Не видно изображения">Раздел 3</a>
+        <a href="#section-4"><IMG class="displayed" src="меню.png" width="30" height="30" alt="Не видно изображения">Раздел 4</a>
+        <a href="#section-5"><IMG class="displayed" src="лупа.png" width="30" height="30" alt="Не видно изображения">Раздел 5</a>
+        <div class="animation start-homei"></div>
+
+    </navi>
+    <nav>
+        <a1 href="#home">Главная</a1>
+        <a1 href="#section-1">Раздел 1</a1>
+        <a1 href="#section-2">Раздел 2</a1>
+        <a1 href="#section-3">Раздел 3</a1>
+        <a1 href="#section-4">Раздел 4</a1>
+        <a1 href="#section-5">Раздел 5</a1>
+        <div class="animation start-home"></div>
+
+    </nav>
+
+</header>
+<section id="home">
+    <input type="checkbox" id="toggle" class="toggle--checkbox">
+    <label for="toggle" class="toggle--label">
+        <span class="toggle--label-background"></span>
+    </label>
+    <div class="background"></div>
+</section>
+
+<section id="section-1">
+    <main class="contentfa">
+        <div class="containerfa">
+            <div class="card clothing">Маша отмечает 30-й День рождения</div>
+            <div class="card decor">Паша отмечает 42-й День рождения</div>
+            <div class="card bags">Саша отмечает 19-й День рождения</div>
+            <div class="card decor1">Даша отмечает 26-й День рождения</div>
+            <div class="card clothing1">Петя отмечает 23-й День рождения</div>
+            <div class="card bags1">Вася отмечает 15-й День рождения</div>
+
+        </div>
+    </main>
+</section>
+
+<section id="section-2">
+
+    <div class="gradient-card">
+        <div class="text-container">
+            <h2  align="center">Заголовок-1</h2>
+            <p class="subtitle">
+            <p><center>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+            </center>
+            </p>
+
+            <div>
+                <a id="first" onclick="first()">Подробнее</a>
+                <a id="first_yelloy"; style="display:none" onclick="first_yelloy()">Скрыть </a>
+
+                <div id="second_hide" style="display:none">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </div>
+
+            </div>
+       </div>
+        <a><center><IMG class="displayed" src="облачн_хран.png" width="100" height="100"
+                        alt="Не видно изображения"></center></a>
+    </div>
+
+
+    <div class="gradient-card">
+        <div class="text-container">
+            <h2  align="center">Заголовок-2</h2>
+            <p class="subtitle">
+            <p><center>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </center>
+            </p>
+
+            <div>
+                <a id="first1" onclick="first1()">Подробнее</a>
+                <a id="first_yelloy1"; style="display:none" onclick="first_yelloy1()">Скрыть </a>
+
+                <div id="second_hide1" style="display:none">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </div>
+
+            </div>
+        </div>
+        <a><center><IMG class="displayed" src="языки_програм.png" width="100" height="100"
+                        alt="Не видно изображения"></center></a>
+    </div>
+
+    <div class="gradient-card">
+        <div class="text-container">
+            <h2  align="center">Заголовок-3</h2>
+            <p class="subtitle">
+            <p><center>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+        </center>
+            </p>
+
+            <div>
+                <a id="first2" onclick="first2()">Подробнее</a>
+                <a id="first_yelloy2"; style="display:none" onclick="first_yelloy2()">Скрыть </a>
+
+                <div id="second_hide2" style="display:none">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </div>
+
+            </div>
+        </div>
+        <a><center><IMG class="displayed" src="монитор.png" width="100" height="100"
+                        alt="Не видно изображения"></center></a>
+    </div>
+</section>
+
+<section id="section-3">
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Уведомление</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <a><center><IMG class="displayed" src="фотокамера.png" width="100" height="100"
+                                    alt="Не видно изображения"></center></a>
+                    <p><center>Создайте простое модальное окно, используя HTML, CSS и JS</center></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- openModal - id модального окна (элемента div) -->
+    <a href="#openModal" class="double-border-button"><center>Показать окно</center></a>
+</section>
+
+<section id="section-4">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
+    <button class="noselect">Click me</button>
+</section>
+
+
+<section id="section-5">
+    <div class="cardmif">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>Введите ваше сообщение</label>
+                    <textarea rows="5" cols="40" onKeyDown="text_limit(this, 'prog_bar', 20)"
+                              onKeyUp="text_limit(this, 'prog_bar', 20)" onFocus="text_limit(this, 'prog_bar', 20)"></textarea>
+                </div>
+            </div>
+            <div id="prog_bar" style="width: 89px; height: 25px; color: #000000;
+font-size: 10px; background-color: #ff00ea;">Limit:&nbsp;0%</div>
+        </div>
+    </div>
+    </div>
+
+</section>
+<footer>2021© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

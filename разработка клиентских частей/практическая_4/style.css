@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+body::-webkit-scrollbar{
+    width:25px;
+}
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(60deg, #7614a8, #da2fc4);
+    border-radius: 15px;
+}
+/*Сколар*/
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.scrollto{
+    height: 100px;
+
+}
+
+header,
+nav,
+section,
+.content-container,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 8em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    justify-content: space-between;
+    width: 70%;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid #f05454;
+}
+
+/* ========== Hero Section ==========*/
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.gradient-card {
+    font-family: CONSTANTIA;
+    width: 200px;
+    margin: auto;
+    align-items: left;
+    /*margin-bottom: 300px; */
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #ee01ff;
+    box-shadow:10px 20px #1e1e1e;
+    /*background: white;*/
+}
+
+.gradient-card_1 {
+    font-family: CONSTANTIA;
+    width: 200px;
+    align-items: right;
+    /*margin-bottom: 300px;*/
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #0729e8;
+    box-shadow:10px 20px #1e1e1e;
+    background: linear-gradient(60deg, white, #0000ff);
+    /*background: white;*/
+}
+.gradient-card_2 {
+    font-family: CONSTANTIA;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-bottom: 100px; padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #ee01ff;
+    box-shadow:10px 20px #1e1e1e;
+    align-self: flex-end;
+    order: 1;
+}
+/*раздел 2 - 4_3*/
+#section-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+#section-3{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+.gradient-card_3 {
+    font-family: CONSTANTIA;
+    width: 200px;
+    padding: 40px; margin-bottom: 400px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid  #9815f1;
+    background: linear-gradient(60deg, #ec95e9, #9815f1);
+}
+.gradient-card_4 {
+    font-family: CONSTANTIA;
+    width: 200px;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #3ecb1e;
+    background: linear-gradient(60deg, #bfd354, #3ecb1e);
+}
+
+/*Раздел 3*/
+.gradient-card_5 {
+    font-family: CONSTANTIA;
+    width: 200px;
+   /* margin-bottom: 600px;*/
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid  #9815f1;
+    background: linear-gradient(60deg, #ec95e9, #9815f1);
+}
+.gradient-card_6 {
+    padding: 40px;
+    font-family: CONSTANTIA;
+   /* margin-bottom: 2000px;*/
+    width: 200px;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #119298;
+    background: linear-gradient(60deg, #5edcd0, #119298);
+}
+
+#section-4{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+#section-5{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#section-6{
+    display: flex;
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+    posotion: relative;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+#section-6:hover
+{
+    margin-bottom: 7em;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.gradient-card_7 {
+    display: flex;
+    font-family: CONSTANTIA;
+    width: 2270px;
+    align-items: center;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #ffb800;
+    background: linear-gradient(60deg, #e1c576, #ffb800);
+
+    transition-duration: 1s;
+}
+
+#section-6:hover.gradient-card_7 {
+    margin-bottom: 1em;
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100px;
+}
+
+/*Раздел 4*/
+.gradient-card_8
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    margin: auto;
+    align-items: left;
+    /*margin-bottom: 300px; */
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #ee01ff;
+    box-shadow:10px 20px #1e1e1e;
+}
+.gradient-card_9
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    align-items: right;
+    /*margin-bottom: 300px;*/
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #0729e8;
+    box-shadow:10px 20px #1e1e1e;
+    background: linear-gradient(60deg, white, #0000ff);
+}
+#section-7
+{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+#section-8
+{
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Раздел 5*/
+.gradient-card_10
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    margin: auto;
+    /*margin-bottom: 300px; */
+    padding: 40px;
+    color: #000000;
+    border-radius: 10px; border: 1px solid #ff01f2;
+}
+.gradient-card_11
+{
+    margin: 50px;
+    font-family: CONSTANTIA;
+    width: 200px;
+    /*margin-bottom: 300px; */
+    padding: 40px;
+
+    color: #000000;
+    border-radius: 10px; border: 1px solid #ff01f2;
+}
+#section-9
+{
+    display: flex;
+    align-items: flex-end;
+}
+.gradient-card_10{
+    align-self: flex-start;
+}
+/*Раздел 6*/
+.gradient-card_12
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    /*margin-bottom: 300px;*/
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #0729e8;
+    background: linear-gradient(60deg, white, #0000ff);
+}
+.buttons
+{
+    background: #222831;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons:hover {
+    transform: translate(-700px,300px);
+}
+.gradient-card_13
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #0729e8;
+    box-shadow:10px 20px #1e1e1e;
+    background: linear-gradient(60deg, white, #0000ff);
+    position: relative;
+    top: 0px;
+    transition: transform .2s ease-in-out;
+}
+
+#section-10
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section-11
+{
+    display: flex;
+    flex-wrap: wrap;
+    /*transition: 1s;*/
+}
+#section-11:hover
+{
+    width: 200px;
+    transform: translate(0,50px);
+    align-items: center;
+
+}
+#section-11:hover.gradient-card_13
+{
+    displey: flex;
+    justify-content: center;
+    font-family: CONSTANTIA;
+    width: 200px;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px solid #0729e8;
+    background: linear-gradient(60deg, white, #0000ff);
+}
+
+/*раздел 7*/
+/*раздел 7*/
+.gradient-card_14
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    align-items: right;
+    /*margin-bottom: 300px;*/
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px;
+    background: linear-gradient(60deg, #1b434f, #0fefb4);
+    /*background: white;*/
+}
+#section-12
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: 2s;
+
+}
+#section-12:hover
+{
+    width: 200px;
+    transform: translate(10,40px);
+    align-items: center;
+
+}
+#section-12:hover.gradient-card_14
+{
+    displey: flex;
+    justify-content: flex-end;
+    font-family: CONSTANTIA;
+    width: 200px;
+    padding: 40px;
+}
+
+/*Раздел 8*/
+.gradient-card_15
+{
+    font-family: CONSTANTIA;
+    width: 200px;
+    /*margin-bottom: 300px;*/
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px; border: 1px;
+    background: linear-gradient(60deg, #9f2b98, #ef0fe4);
+    /*background: white;*/
+}
+
+#section-13
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#section-13:hover
+{
+    transform: translate(0,50px);
+}
+
+div {
+    background: linear-gradient(60deg, white, #f700ff);
+}
+
+
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+}

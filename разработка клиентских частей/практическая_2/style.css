@@ -1,0 +1,56 @@
+*{
+    margin:0px; padding:0px;
+}
+body {
+    font-family: sans-serif; background: #3D3D3D; color: #fff;
+}
+p {
+    border-radius: 10px; padding: 30px; background: #666;
+}
+input {
+    border:1px solid #ff7301; border-radius: 20px; background: #1e1e1e; width: 300px;
+    height: 40px; color: #fff;
+}
+input:hover {
+    background: black;
+}
+.content-container { width: 1000px; margin-top: 100px; margin-left: 300px; margin-right: 300px;
+    margin-bottom: 100px; padding: 40px;
+    border-radius: 10px; border: 1px solid #ff7301;
+    box-shadow:10px 20px #1e1e1e;
+/*background: white;*/
+}
+
+.smaller-content-container { width: 320px; margin-top: 100px; margin-left: 300px; margin-right: 300px;
+    margin-bottom: 100px; padding: 40px;
+    border-radius: 10px; border: 1px solid #ff7301;
+    box-shadow:10px 20px #1e1e1e;
+    /*background: white;*/
+}
+h1 {
+    font-family: Oswald;
+    text-decoration: underline; font-weight: 500;
+    text-transform: uppercase;
+}
+span {
+    color: #ff7301;
+}
+h2 {
+    font-family: Oswald;
+    text-decoration: underline; font-weight: 500;
+    text-transform: uppercase;
+}
+.content-container-small { width: 450px; margin-left: 500px; margin-top: 100px; margin-right: 300px;
+    margin-bottom: 100px; padding: 40px;
+    border-radius: 10px; border: 1px solid #ff7301;
+    box-shadow:10px 20px #1e1e1e;
+    /*background: white;*/
+}
+<style>
+ .round {
+     border-radius: 100px; /* Радиус скругления */
+     border: 3px solid green; /* Параметры рамки */
+     box-shadow: 0 0 7px #666; /* Параметры тени */
+ }
+</style>
+}

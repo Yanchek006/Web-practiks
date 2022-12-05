@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <a id="logo-ref" href="#"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3698/3698156.png" alt="Логотип"></a>
+    <nav>
+        <a href="пр_7_1.html">Главная</a>
+        <a href="пр_7_2.html">Раздел 1</a>
+        <a href="пр_7_3.html">Раздел 2</a>
+        <a href="пр_7_4.html">Раздел 3</a>
+        <a href="пр_7.5.html">Раздел 4</a>
+        <a href="пр_7_6.html">Раздел 5</a>
+        <a href="пр_7_7.html">Раздел 6</a>
+        <a href="пр_7_8.html">Раздел 7</a>
+        <a href="пр_7_9.html">Раздел 8</a>
+    </nav>
+</header>
+
+
+<section id="section">
+    <article class="gradient-card_6">
+        <img src="шанель.png" width="300" height="200" alt="Parfume chanel`" class="card_img">
+        <h3 class="card_name">Парфюм chanel</h3>
+        <p class="card_price">9976 <span class="card_currency">руб.</span></p>
+        <button class="card_btn" href="#">В корзину</button>
+
+    </article>
+
+    <article class="gradient-card_7">
+        <img src="помада.png" width="300" height="200" alt="Помада Dior" class="card-1_img">
+        <h3 class="card-1_name">Помада Dior</h3>
+        <p class="card-1_price">3867<span class="card-1_currency">руб.</span></p>
+        <button class="card-1_btn" href="#">В корзину</button>
+    </article>
+
+    <article class="gradient-card_8">
+        <img src="тени_диор.png" width="300" height="200" alt="Тени Dior" class="card-2_img">
+        <h3 class="card-2_name">Тени для век Dior</h3>
+        <p class="card-2_price">4508<span class="card-2_currency">руб.</span></p>
+        <button class="card-2_btn" href="#">В корзину</button>
+    </article>
+    </div>
+</section>
+<style>
+
+    #section {
+        width: 100%;
+        height: 100vh;
+    }
+    .gradient-card_6{
+        width: 320px; padding: 40px;
+        height: 450px;
+        border-radius: 20px;
+        background: linear-gradient(60deg, #de82dc, #6b0766);
+        color: #fff;
+        margin: 20px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+    }
+    .gradient-card_6::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height:100%;
+        background-color: #de82dc;
+        transform:skewY(345deg);
+        position: absolute;
+        top: -50%;
+        right: 0%;
+
+        transition: 0.5s;
+    }
+    .gradient-card_6:hover::before{
+        transform: skewY(390deg);
+        top: -70%;
+    }
+    .card_img{
+        margin-top: 30px;
+        width: 100%;
+        position: relative;
+        transition: 0.5s;
+    }
+    .gradient-card_6:hover .card_img{
+        width: 70%;
+    }
+    .card_name{
+        font-size: 18px;
+        margin: 0 0 10px;
+        position: relative;
+    }
+    .card_price{
+        font-size: 24px;
+        margin: 0  0 30px;
+        position: relative;
+    }
+    .card_currency{
+        font-size: 18px;
+        position: relative;
+    }
+    .card_btn{
+        border: none;
+        cursor: pointer;
+        background-color: #b212aa;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: inherit;
+        text-transform: inherit;
+        font-weight: inherit;
+        position: relative;
+        transition: 0.5s;
+        top:100px;
+    }
+    .card_btn:hover{
+        background-color: #6b0766;
+    }
+    .gradient-card_6:hover .card_btn{
+        top: 0;
+    }
+
+
+    .gradient-card_7{
+        width: 320px; padding: 40px;
+        height: 450px;
+        border-radius: 20px;
+        background: linear-gradient(60deg, #e3bb98, #f8c309);
+        color: #fff;
+        margin: 20px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+    }
+    .gradient-card_7::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height:100%;
+        background-color: #e3bb98;
+        transform:skewY(345deg);
+        position: absolute;
+        top: -50%;
+        right: 0%;
+
+        transition: 0.5s;
+    }
+    .gradient-card_7:hover::before{
+        transform: skewY(390deg);
+        top: -70%;
+    }
+    .card-1_img{
+        margin-top: 30px;
+        width: 100%;
+        position: relative;
+        transition: 0.5s;
+    }
+    .gradient-card_7:hover .card-1_img{
+        width: 70%;
+    }
+    .card-1_name{
+        font-size: 18px;
+        margin: 0 0 10px;
+        position: relative;
+    }
+    .card-1_price{
+        font-size: 24px;
+        margin: 0  0 30px;
+        position: relative;
+    }
+    .card-1_currency{
+        font-size: 18px;
+        position: relative;
+    }
+    .card-1_btn{
+        border: none;
+        cursor: pointer;
+        background-color: #be965c;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: inherit;
+        text-transform: inherit;
+        font-weight: inherit;
+        position: relative;
+        transition: 0.5s;
+        top:100px;
+    }
+    .card-1_btn:hover{
+        background-color: #91521d;
+    }
+    .gradient-card_7:hover .card-1_btn{
+        top: 0;
+    }
+
+    .gradient-card_8{
+        width: 320px; padding: 40px;
+        height: 450px;
+        border-radius: 20px;
+        background: linear-gradient(60deg, #ec8282, #f6536d);
+        color: #fff;
+        font-weight: 500;
+        margin: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+    }
+    .gradient-card_8::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height:100%;
+        background-color: #f6536d;
+        transform:skewY(345deg);
+        position: absolute;
+        top: -50%;
+        right: 0%;
+
+        transition: 0.5s;
+    }
+    .gradient-card_8:hover::before{
+        transform: skewY(390deg);
+        top: -70%;
+    }
+    .card-2_img{
+        margin-top: 30px;
+        width: 100%;
+        position: relative;
+        transition: 0.5s;
+    }
+    .gradient-card_8:hover .card-2_img{
+        width: 70%;
+    }
+    .card-2_name{
+        font-size: 18px;
+        margin: 0 0 10px;
+        position: relative;
+    }
+    .card-2_price{
+        font-size: 24px;
+        margin: 0  0 30px;
+        position: relative;
+    }
+    .card-2_currency{
+        font-size: 18px;
+        position: relative;
+    }
+    .card-2_btn{
+        border: none;
+        cursor: pointer;
+        background-color: #ee2b4a;
+        padding: 15px 30px;
+        border-radius: 30px;
+        color: inherit;
+        text-transform: inherit;
+        font-weight: inherit;
+        position: relative;
+        transition: 0.5s;
+        top:100px;
+    }
+    .card-2_btn:hover{
+        background-color: #f6536d;
+    }
+    .gradient-card_8:hover .card-2_btn{
+        top: 0;
+    }
+
+    footer {
+        background: #161a20;
+        padding: 3em;
+    }
+</style>
+<footer>2021© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

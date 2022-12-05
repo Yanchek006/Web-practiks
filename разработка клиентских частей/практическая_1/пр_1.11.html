@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Страница 11</title>
+    <style>
+        body {
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-family: "Courier New";
+            font-size: 11pt;
+            background: #FFB6C1;
+            height: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h2>Регистрация</h2>
+    <form id="form" action="index.html">
+        <p>ФИО:
+            <input type="text" name="name" placeholder="Сергеев Антон Антонович" required></p>
+        <p>Телефон:
+            <input type="text" name="phone" placeholder="+7-000-000-00-00"></p>
+        <p>E-mail:
+            <input type="text" name="email" placeholder="sergeev@mail.ru" required></p>
+        <p>Пароль:
+            <input type="password" name="pass" placeholder="" required></p>
+        <!-- <p>Повторите пароль: -->
+            <!-- <input type="password" name="chkPass" placeholder="" required></p> -->
+        <label for="uni">Страна в которой вы проживаете:</label>
+        <select name="uni">
+            <option value="it">Россия</option>
+            <option value="fti">Беларусь</option>
+            <option value="kib">Китай</option>
+            <option value="integu">Чехия</option>
+            <option value="rts">Дания</option>
+		<option value="rts">Сербия</option>
+		<option value="rts">Корея</option>
+		<option value="rts">Китай</option>
+		<option value="rts">Хорватия</option>
+            <option value="kbsp">Алжир</option></select>
+        <p>Социальные сети, которые вы используете:</p>
+        <p><input type="checkbox" name="kaf" value="vk" checked>ВКонтакте</p>
+        <p><input type="checkbox" name="kaf" value="instagram">Instagram</p>
+        <p><input type="checkbox" name="kaf" value="telegram">Telegram</p>
+        <p><input type="checkbox" name="kaf" value="WhatsApp">WhatsApp</p>
+	  <p><input type="checkbox" name="kaf" value="no result">Не использую</p>
+        <p>Музыкальные предпочтения:</p>
+        <p><input type="radio" name="Рок" value="Рок"> Рок</p>
+        <p><input type="radio" name="Классика" value="Классика"> Классика </p>
+ 	  <p><input type="radio" name="Поп" value="Поп"> Поп </p>
+        <p><input type="radio" name="Джаз" value="Джаз"> Джаз </p>
+	  <p><input type="radio" name="Метал" value="Метал"> Метал </p>
+ 	  <p><input type="radio" name="all" value="all"> Слушаю все </p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+</body>
+</html>

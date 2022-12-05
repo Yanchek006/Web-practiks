@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <a id="logo-ref" href="#"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3698/3698156.png" alt="Логотип"></a>
+    <nav>
+        <a href="пр_7_1.html">Главная</a>
+        <a href="пр_7_2.html">Раздел 1</a>
+        <a href="пр_7_3.html">Раздел 2</a>
+        <a href="пр_7_4.html">Раздел 3</a>
+        <a href="пр_7.5.html">Раздел 4</a>
+        <a href="пр_7_6.html">Раздел 5</a>
+        <a href="пр_7_7.html">Раздел 6</a>
+        <a href="пр_7_8.html">Раздел 7</a>
+        <a href="пр_7_9.html">Раздел 8</a>
+    </nav>
+</header>
+
+<section id="section">
+    <div class="wrap1">
+        <button class="btn1" onclick="alert('button pressed')">Hover me</button>
+    </div>
+</section>
+<style>
+
+    button {
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 16px;
+    }
+    button:hover{
+        border: outset;
+    }
+
+    .wrap1 {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        marin: 0;
+        padding: 0;
+    }
+    .btn1 {
+        position: relative;
+        font-size: 1.5rem;
+        padding: 1rem 1.75rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+    .btn1:nth-child(1) {
+
+        background: linear-gradient(to left, #880d9a, #371d48);
+    }
+    .btn1:after {
+        content: "";
+        height: 200%;
+        left: -230%;
+        opacity: 0;
+        position: absolute;
+        top: -20%;
+        transform: rotate(-30deg);
+        width: 200%;
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+    }
+    /* Hover state - trigger effect */
+
+    .btn1:hover:after {
+        left: -50%;
+        background-position: right;
+        opacity: 1;
+        top: -50%;
+        transition-duration: 0.7s, 0.7s, 0.15s;
+        transition-property: left, top, opacity;
+        transition-timing-function: ease;
+    }
+
+</style>
+<footer>2022© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin:0px; padding:0px;
+}
+body {
+    background: #101070;
+    font-family: Oswald;
+}
+.content{
+    color: white;
+    background: #4048b4;
+}
+.dws-menu{
+    background-color: #4048b4;
+    margin-top: 0px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+li.dws-li {
+    list-style: none;
+    padding: 10px;
+}
+li.dws-li a{
+    box-shadow: 0 0 7px #000000;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+li.dws-li a i{
+    margin-right: 10px;
+}
+li.dws-li a::after{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #2573db;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+li.dws-li:hover{ /*рамка анимированая*/
+    background-color: #808ee8;
+}
+li.dws-li:hover a:before{ /*анимация*/
+    width: 50%;
+    transform: translateX(100%);
+}
+li.dws-li:hover a:after{ /*анимация*/
+    width: 50%;
+    transform: translateX(-100%);
+}
+li.dws-li a:hover{ /*подсветка*/
+    color: #1336e8;
+}
+.text-block {
+    margin-left:20px;
+}
+
+.content-container{ /*выравнивание текста по центру */
+    display: flex;
+    justify-content: center;
+    margin: 100px; padding:100px;
+    align-items: center;
+    column-gap: 10px;
+}
+.content-container_2{ /*выравнивание текста по центру */
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px; padding:100px;
+    align-items: center;
+    column-gap: 10px;
+}
+.content-container_3{ /*выравнивание текста по центру */
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 100px; padding:100px;
+    align-items: center;
+    column-gap: 10px;
+}
+.content-container_4{ /*выравнивание текста по центру */
+    display: flex;
+    width: 50%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 100px; padding:100px;
+    align-items: center;
+    column-gap: 10px;
+}
+
+h1 {
+    width: 40%;
+    font-family: Oswald;
+    text-decoration: underline; font-weight: 500;
+    text-transform: uppercase;
+}
+p {
+    width: 100%;
+    max-width: max-content;
+    border-radius: 10px; padding: 30px; background: rgba(16, 20, 56, 0.75);
+    box-shadow:10px 20px rgb(90, 91, 128);
+    border: 1px solid #000000;
+}
+
+span {
+    color: #00f7ff;
+}
+
+/*  Меняем порядок элементов, делая как бы строчную расстановку */
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+/* Новые колонки разделители */
+.content-container::before;
+.content-container::after {
+    flex-basis: 100%;
+    width: 90;
+    order: 5;
+}

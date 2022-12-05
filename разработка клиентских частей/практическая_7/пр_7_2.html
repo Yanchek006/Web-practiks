@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <a id="logo-ref" href="#"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3698/3698156.png" alt="Логотип"></a>
+    <nav>
+        <a href="пр_7_1.html">Главная</a>
+        <a href="пр_7_2.html">Раздел 1</a>
+        <a href="пр_7_3.html">Раздел 2</a>
+        <a href="пр_7_4.html">Раздел 3</a>
+        <a href="пр_7.5.html">Раздел 4</a>
+        <a href="пр_7_6.html">Раздел 5</a>
+        <a href="пр_7_7.html">Раздел 6</a>
+        <a href="пр_7_8.html">Раздел 7</a>
+        <a href="пр_7_9.html">Раздел 8</a>
+    </nav>
+</header>
+
+<section id="section">
+    <div class="main-container">
+        <div class="heading">
+            <h1 class="heading__title"></h1>
+            <p class="heading__credits"><a class="heading__link" target="_blank"><br></a></p>
+        </div>
+        <div class="cards">
+            <div class="card card-1">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h2>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-2">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam.</h2>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-3">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </h2>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-4">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">"But I must explain to you how all this mistaken idea of denouncing pleasure
+                    and praising pain was born and I will give you a complete account of the system.</h2>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-5">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                    but because those who do not know how to pursue pleasure rationally encounter consequences.</h2>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="card card-1">
+                <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                <p class="card__exit"><i class="fas fa-times"></i></p>
+                <h2 class="card__title">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti.</h2>
+                <p class="card__apply">
+                    <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+
+
+    .main-container {
+        padding: 30px;
+    }
+
+    /* HEADING */
+
+    .heading {
+        text-align: center;
+    }
+
+    .heading__title {
+        font-weight: 600;
+    }
+
+    .heading__credits {
+        margin: 10px 0px;
+        color: #888888;
+        font-size: 25px;
+        transform-origin:center;
+        transform:perspective(800px) rotateY(25deg);
+        transition:0.5s;
+    }
+
+    .heading__link{
+        text-decoration: none;
+    }
+
+    .heading__credits .heading__link {
+        color: inherit;
+    }
+
+    /* CARDS */
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 20px;
+        padding: 20px;
+        width: 500px;
+        min-height: 200px;
+        display: grid;
+        grid-template-rows: 20px 50px 1fr 50px;
+        border-radius: 10px;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+        transform-origin:center;
+        transform:perspective(800px) rotateY(25deg);
+        transition:0.5s;
+    }
+
+    .card:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        transform: scale(1.01);
+    }
+
+    .card__link,
+    .card__exit,
+    .card__icon {
+        position: relative;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card__link::after {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.6);
+        transition: all 0.5s;
+    }
+
+    .card__link:hover::after {
+        width: 100%;
+    }
+
+    .card__exit {
+        grid-row: 1/2;
+        justify-self: end;
+    }
+
+    .card__icon {
+        grid-row: 2/3;
+        font-size: 30px;
+    }
+
+    .card__title {
+        grid-row: 3/4;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .card__apply {
+        grid-row: 4/5;
+        align-self: center;
+    }
+
+    /* CARD BACKGROUNDS */
+
+    .card-1 {
+        background: radial-gradient(#1fe4f5, #3fbafe);
+    }
+
+    .card-2 {
+        background: radial-gradient(#fbc1cc, #fa99b2);
+    }
+
+    .card-3 {
+        background: radial-gradient(#76b2fe, #b69efe);
+    }
+
+    .card-4 {
+        background: radial-gradient(#60efbc, #58d5c9);
+    }
+
+    .card-5 {
+        background: radial-gradient(#f588d8, #c0a3e5);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1600px) {
+        .cards {
+            justify-content: center;
+        }
+    }
+
+</style>
+</body>
+</html>

@@ -1,0 +1,884 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+header,
+nav,
+section,
+.content-container,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 8em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+nav {
+    justify-content: space-between;
+    width: 40%;
+
+
+
+    height: 8px;
+    left:0;
+    bottom:30px;
+    border-radius:2px 2px 0 0;
+    transition:0.8s;
+
+}
+nav a1 {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+
+
+
+    z-index: 1;
+    text-decoration: none;
+
+    text-align: center;
+
+
+}
+
+nav .animation {
+    position: absolute;
+    height: 5%;
+    top: 80%;
+    z-index: 0;
+    transition: all .4s ease 0s;
+    border-radius: 8px;
+}
+a1:nth-child(1) {
+    width: 100px;
+}
+a1:nth-child(2) {
+    width: 110px;
+}
+a1:nth-child(3) {
+    width: 110px;
+}
+a1:nth-child(4) {
+    width: 160px;
+}
+a1:nth-child(5) {
+    width: 100px;
+}
+a:nth-child(6) {
+    width: 110px;
+}
+nav .home, a1:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 900px;
+    background: linear-gradient(40deg, #020464, #c903bf, #ce91cc);
+}
+nav .section-1, a1:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 1000px;
+    background: linear-gradient(40deg, #ce91cc, #c903bf, #020464);
+}
+nav .section-2, a1:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 1100px;
+    background: linear-gradient(40deg, #020464, #c903bf, #ce91cc);
+}
+nav .section-3, a1:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 1200px;
+    background: linear-gradient(40deg, #ce91cc, #c903bf, #020464);
+}
+nav .start-contact, a1:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 1300px;
+}
+navi .section-6, a:nth-child(6):hover~.animation {
+    width: 100px;
+    left: 1400px;
+    background: linear-gradient(40deg, #020464, #c903bf, #ce91cc);
+    overflow: hidden;
+
+}
+navi .section-5, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+}
+
+/*Menu - 2*/
+
+navi {
+    margin: 20px auto 0;
+    position: relative;
+    width: 700px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 0;
+
+}
+navi a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+navi .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1) {
+    width: 100px;
+}
+a:nth-child(2) {
+    width: 110px;
+}
+a:nth-child(3) {
+    width: 100px;
+}
+a:nth-child(4) {
+    width: 160px;
+}
+a:nth-child(5) {
+    width: 120px;
+}
+a:nth-child(6) {
+    width: 110px;
+}
+navi .home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background: linear-gradient(40deg, #640202, #f31717, #ecb0b0);
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px ; color: #da0d0d;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+navi .section-1, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background: linear-gradient(60deg, #cb5005, #ef7918, #e8cec2);
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px ; color: #e54105;
+    border-radius: 8px;
+    overflow: hidden;
+}
+navi .section-2, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background: linear-gradient(60deg, #35a80c, #66d018, #bed2b6);
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px ; color: darkgreen;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+navi .section-3, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background: linear-gradient(60deg, #5b146b, #c037ce, #c98fd2);
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px ; color: #c903bf;
+    border-radius: 8px;
+    overflow: hidden;
+}
+navi .section-4, a:nth-child(5):hover~.animation {
+    width: 160px;
+    left: 210px;
+    background: linear-gradient(60deg, #141b6b, #3762ce, #8fa2d2);
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px ; color: #0306c9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+navi .section-6, a:nth-child(6):hover~.animation {
+    width: 100px;
+    left: 600px;
+    background: linear-gradient(40deg, #cba109, #ffe900, #d7cb4b);
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px ; color: #d3da0d;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+navi .section-5, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+}
+
+
+
+/* ========== Hero Section ==========*/
+section {
+    width: 100%;
+    height: 100vh;
+}
+/*раздел - 1*/
+.contentfa {
+    width: 1000px; /* ограничение ширины контейнера */
+    margin: 0 auto; /* отступ сверху и центрирование контейнера по горизонтали */
+}
+
+.containerfa {     display: flex; /* включить флексовый контейнер */
+    flex-wrap: wrap; /* разрешить карточкам переносится на следующий ряд */
+    justify-content: flex-start; /* расположение элементов слева направо */
+    margin: 0 -15px; /* задаем отрицательные боковые отступы */
+    margin-bottom: 10px;
+
+}
+.card {
+    width:calc(1/3*100% - 30px); /* 1/3 – 3 карточки в ряд, а 30px – ширина между карточками */
+    margin: 15px; /* отступы между карточек */
+    height: 150px; /* высота карточки */
+    line-height: 150px; /* выравнивание по центру текста внутри карточки по вертикали */
+    text-align: center; /* выравнивание по центру текста внутри карточки по горизонтали */
+    color: white; /* цвет текста */
+    font-weight: bold;/* жирность текста */
+    font-size: 15px; /* размер текста */
+    border-radius: 15px;
+    background: linear-gradient(45deg, #0202af,deeppink);
+}
+.clothing {
+    background-color: #7a9850;
+}
+.clothing1 {
+    background-color: #7a9850;
+}
+.decor {
+    background-color: #c55a71;
+}
+.decor1 {
+    background-color: #c55a71;
+}
+
+.bags {
+    background-color: #182f0f;
+}
+
+.bags1 {
+    background-color: #182f0f;
+}
+
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+}
+
+
+
+/*переключатель*/
+:root {
+    /** sunny side **/
+    --blue-background: #C2E9F6;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --indigo-background: #808fc7;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+}
+
+
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--blue-background);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 250ms ease-in;
+}
+
+.toggle--checkbox {
+    display: none;
+}
+.toggle--checkbox:checked {
+    /** This will all flip from sun to moon **/
+    /** Change the label color **/
+}
+.toggle--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+}
+.toggle--checkbox:checked + .toggle--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+    /** Change the cloud to stars **/
+    /** Change the sun into the moon **/
+    /** Show the dimples on the moon **/
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    left: 60px;
+    width: 5px;
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+    width: 5px;
+    height: 5px;
+    top: -25px;
+}
+.toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
+    width: 5px;
+    height: 5px;
+    left: -30px;
+    top: 20px;
+}
+.toggle--checkbox:checked + .toggle--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+}
+.toggle--checkbox:checked + .toggle--label:after {
+    transition-delay: 350ms;
+    opacity: 1;
+}
+.toggle--label {
+    /** Placeholder element, starting at blue **/
+    width: 200px;
+    height: 100px;
+    background: var(--blue-color);
+    border-radius: 100px;
+    border: 5px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+    /** The sun cloud and moon stars **/
+    /** Sun/Moon element **/
+    /** Gray dots on the moon **/
+}
+.toggle--label-background {
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background: var(--white);
+    left: 135px;
+    top: 45px;
+    transition: all 150ms ease-in;
+}
+.toggle--label-background:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -20px;
+    transition: all 150ms ease-in;
+}
+.toggle--label-background:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -10px;
+    transition: all 150ms ease-in;
+}
+.toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 82px;
+    height: 82px;
+    border: 5px solid var(--yellow-border);
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    border-radius: 82px;
+    background: var(--yellow-background);
+}
+.toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+    left: 143px;
+    top: 23px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+@keyframes switch {
+    0% {
+        left: 4px;
+    }
+    60% {
+        left: 4px;
+        width: 112px;
+    }
+    100% {
+        left: 104px;
+        width: 82px;
+    }
+}
+@keyframes reverse {
+    0% {
+        left: 104px;
+        width: 82px;
+    }
+    60% {
+        left: 72px;
+        width: 112px;
+    }
+    100% {
+        left: 4px;
+    }
+}
+
+/*раздел-2*/
+.gradient-card {
+ display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin: 100px;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Oswald;
+    width: 400px; padding: 40px;
+    color: #ffffff;
+
+    border-radius: 0px;
+    box-shadow:10px 20px #1e1e1e;
+    /*background: white;*/
+    background: radial-gradient(circle at 90% 0%, #84bd73, #188d06 15%, #4b4b4b 0%);
+}
+
+p#first {
+
+    cursor: pointer;
+
+    font-family: cursive;
+
+    line-height: 13px;
+
+    text-indent: 22px;
+
+    line-height: 33px;
+
+    border: 1px solid #d2d2d2;
+
+    font-size: 18px;
+
+}
+
+p#first_yelloy {
+
+    cursor: pointer;
+
+    background: #ff9900;
+
+    font-size: 18px;
+
+    color: white;
+
+    text-indent: 22px;
+
+    line-height: 33px;
+
+    border: 1PX SOLID #ff9900;
+
+}
+
+
+
+.gradient-card .text-container a{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #188d06 ;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.gradient-card .text-container a:hover /*well*/
+{
+    background: #d207b1;
+    border: 1px solid rgba(255, 0, 88, 0.4);
+    box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+h2 {
+    font-family: Oswald;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*section-3 - modal frame*/
+/* стилизация содержимого страницы */
+#section-3 {
+    background: linear-gradient(45deg, #282828, #a1a1a1);
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #000000;
+}
+
+/*Button_2*/
+.double-border-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+}
+.double-border-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+}
+.double-border-button:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+
+
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto; /* для отображения модального окна по центру */
+    }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: linear-gradient(#424242, #6e6e6e,white);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+/*раздел - 4 - кнопка*/
+
+#section-4{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6dd6d1;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: #6dd6d1;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px #57aba7, 0px -10px 25px #a6fffa, inset 0px -5px 10px #57aba7, inset 0px 5px 10px #a6fffa;
+    font-family: 'Damion', cursive;
+    color: white;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+button:hover {
+    border: 2px solid #6dd6d1;
+    animation: hueRotation 2s linear infinite;
+}
+
+@keyframes hueRotation {
+    to {filter: hue-rotate(360deg);}
+}
+
+button:focus {
+    outline: none;
+}
+/*раздел 5 */
+#section-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardmif {
+    width: 65%;
+    margin-top: 10%;
+    padding: 30px 90px 90px 90px;
+    border: 4px solid rgb(0, 0, 0);
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
+    position: relative;
+}
+
+.cardmif .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 30px;
+}
+
+.cardmif .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+}
+
+.cardmif .row .form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+
+.cardmif .row .form-group input,
+.cardmif .row .form-group textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #000000;
+    border-radius: 15px;
+}
+#prog_bar{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    color: #000000;
+    border-radius: 15px;
+
+}
+
+.cardmif .row .form-group label {
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+    margin-top: 64px;
+}
+
+.cardmif .row .form-group input:focus,
+.cardmif .row .form-group textarea:focus {
+    border: 4px; background: linear-gradient(60deg, #fd52e4, #d403e1, #9b0ad9);
+    transition: all 0.5s;
+}
+
+.cardmif .row input[type="submit"] {
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.cardmif .row input[type="submit"]:hover {
+    border: 4px solid;
+    border: 4px; background: linear-gradient(60deg, #00ffd6, #00c4ff, #005bff);
+    color: #ffffff;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+    .cardmif .row {
+        grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+
+    .cardmif {
+        padding: 20px;
+    }
+
+    .cardmif h2 {
+        font-size: 34px;
+    }
+
+    .cardmif .row input[type="submit"] {
+        width: 100%;
+    }
+}

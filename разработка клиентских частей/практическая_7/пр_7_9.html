@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <a id="logo-ref" href="#"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3698/3698156.png" alt="Логотип"></a>
+    <nav>
+        <a href="пр_7_1.html">Главная</a>
+        <a href="пр_7_2.html">Раздел 1</a>
+        <a href="пр_7_3.html">Раздел 2</a>
+        <a href="пр_7_4.html">Раздел 3</a>
+        <a href="пр_7.5.html">Раздел 4</a>
+        <a href="пр_7_6.html">Раздел 5</a>
+        <a href="пр_7_7.html">Раздел 6</a>
+        <a href="пр_7_8.html">Раздел 7</a>
+        <a href="пр_7_9.html">Раздел 8</a>
+    </nav>
+</header>
+<section id="section0a">
+    <div class="container1">
+        <div class="box1">
+            <div class="img-box1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/David_Paterson_5_by_David_Shankbone.jpg" alt="Landscape" title="Landscape">
+            </div>
+
+            <div class="content1">
+                <h2>
+                    Дэвид Паттерсон
+                </h2>
+
+                <p style="color: cornflowerblue">
+                    Специалист по информатике и профессор Калифорнийского университета в Беркли.
+                </p>
+
+                <a href="javascript:void(0);">
+                    Read More
+                </a>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="img-box1">
+                <img src="https://takprosto.cc/wp-content/uploads/m/mir-posle-pandemii/1.jpg" alt="Landscape" title="Landscape">
+            </div>
+
+            <div class="content1">
+                <h2>
+                    Билл Гейтс
+                </h2>
+
+                <p style="color: #ffba00">
+                    Человек, который не нуждается в представлении. Как я мог оставить в стороне самого богатого
+                    программиста в мире, чье программное обеспечение используется всем миром.
+
+                </p>
+
+                <a href="javascript:void(0);">
+                    Read More
+                </a>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="img-box1">
+                <img src="https://cdn.facesofopensource.com/wp-content/uploads/2017/03/16181944/linustorvalds.faces22106.web_.jpg" alt="Landscape" title="Landscape">
+            </div>
+
+            <div class="content1">
+                <h2>
+                    Линус Торвальдс
+                </h2>
+
+                <p style="color: #f7ff00">
+                    Cоздатель знаменитой ОС Linux, без существования которой немыслима работа
+                    множества компьютеров и баз данных по всему миру.
+                </p>
+
+                <a href="javascript:void(0);">
+                    Read More
+                </a>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="img-box1">
+                <img src="https://cdn.peteradamsphoto.com/wp-content/uploads/2013/06/19040940/faces.KenThompson20449.web_.jpg" alt="Landscape" title="Landscape">
+            </div>
+
+            <div class="content1">
+                <h2>
+                    Кен Томпсон
+                </h2>
+
+                <p style="color: #5746ff">
+                    Разработчик, который известен не только в компьютерном сообществе, но и среди хакеров.
+                </p>
+
+                <a href="javascript:void(0);">
+                    Read More
+                </a>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="img-box1">
+                <img src="https://cdn.mos.cms.futurecdn.net/JC5BJJFiDpBtaxBMZhgrRQ-1200-80.jpg" alt="Landscape" title="Landscape">
+            </div>
+
+            <div class="content1">
+                <h2>
+                    Джон Кармак
+                </h2>
+
+                <p style="color: #c400ff">
+                    Программист, соучредитель и бывший технический директор Id Software.
+                </p>
+
+                <a href="javascript:void(0);">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    *:focus {
+        outline: 0;
+    }
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        width: 1200px;
+        height: 1500px;
+    }
+    .container1 .box1 {
+        height: 400px;
+        margin: 20px 40px;
+        top: 250px;
+        overflow: hidden;
+        position: relative;
+        width: 280px;
+    }
+
+    .container1 .box1 .img-box1 {
+        background-color: #000000;
+        clip-path: circle(400px at center 100px);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: clip-path 0.5s 0.5s ease;
+        width: 100%;
+    }
+
+    .container1 .box1:hover .img-box1 {
+        clip-path: circle(80px at center 100px);
+    }
+
+    .container1 .box1 .img-box1 img {
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .container1 .box1 .content1 {
+        bottom: 0;
+        height: 55%;
+        left: 0;
+        padding: 20px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container1 .box1 .content1 h2,
+    .container1 .box1 .content1 p,
+    .container1 .box1 .content1 a {
+        margin: 5px 0 10px 0;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease,
+        transform 0.5s ease;
+    }
+
+    .container1 .box1 .content1 a {
+        background-color: #000000;
+        color: #ffffff;
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .container1 .box1:hover .content1 h2,
+    .container1 .box1:hover .content1 p,
+    .container1 .box1:hover .content1 a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .container1 .box1:hover .content1 h2 {
+        transition-delay: 0.5s;
+    }
+
+    .container1 .box1:hover .content1 p {
+        transition-delay: 0.7s;
+    }
+
+    .container1 .box1:hover .content1 a {
+        transition-delay: 0.9s;
+    }
+</style>
+<footer>2022© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

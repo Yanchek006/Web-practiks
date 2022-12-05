@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Работа</title>
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+          rel="stylesheet"
+  />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <a id="logo-ref" href="#"><img id="logo" src="https://cdn-icons-png.flaticon.com/512/3698/3698156.png" alt="Логотип"></a>
+  <nav>
+    <a href="#home">Главная</a>
+    <a href="#section-1">Раздел 1</a>
+    <a href="#section-2">Раздел 2</a>
+    <a href="#section-3">Раздел 3</a>
+    <a href="#section-4">Раздел 4</a>
+    <a href="#section-5">Раздел 5</a>
+    <a href="#section-6">Раздел 6</a>
+  </nav>
+</header>
+<section id="home">
+  <div class="container">
+    <div class="wrapper">
+      <canvas id="canvas" width="200" height="70"></canvas>
+      <button id="reload-button">
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+      </button>
+    </div>
+    <input
+            type="text"
+            id="user-input"
+            placeholder="Введите капчу..."
+    />
+    <button id="submit-button">Проверить</button>
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</section>
+<section id="section-1">
+  <div class="container1">
+    <div class="container-segment">
+      <div class="segment-title">Hours</div>
+      <div class="segment">
+        <div class="flip-card" data-hours-tens>
+          <div class="top">2</div>
+          <div class="bottom">2</div>
+        </div>
+        <div class="flip-card" data-hours-ones>
+          <div class="top">4</div>
+          <div class="bottom">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Minutes</div>
+      <div class="segment">
+        <div class="flip-card" data-minutes-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-minutes-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Seconds</div>
+      <div class="segment">
+        <div class="flip-card" data-seconds-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-seconds-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <a><center><IMG class="displayed" src="релакс_тайм.png" width="400" height="400"
+                  alt="Не видно изображения"></center></a>
+  <script src="script1.js"></script>
+</section>
+
+<section id="section-2">
+  <form action="" class="search-bar">
+    <input type="search" name="search" pattern=".*\S.*" required>
+    <button class="search-btn" type="submit">
+      <span>Search</span>
+    </button>
+  </form>
+</section>
+
+<section id="section-3">
+  <aside class="profile-card">
+    <header>
+      <!-- here’s the avatar -->
+      <a href="https://tutsplus.com">
+        <img src="https://randomuser.me/api/portraits/men/99.jpg">
+      </a>
+      <!-- the username -->
+      <h1>George Darkos</h1>
+      <!-- and role or location -->
+      <h2>- Full Stack Web Developer -</h2>
+    </header>
+    <div class="box1">
+
+    <div class="img-box1">
+      <center><img src="https://takprosto.cc/wp-content/uploads/z/zadachka-na-logiku/2.jpg" alt="Илон Маск" title="Илон Маск" width="310" height="240" style="cursor: zoom-in;" onclick="example(this)" /></center>
+      <script src="script3.js"></script>
+    </div>
+
+    <div class="profile-bio">
+      <p>Илон Маск</p>
+      <p>Илон Маск — американский изобретатель, визионер и миллиардер. Известен двумя проектами — производитель электромобилей
+        Tesla и космическая компания SpaceX.</p>
+      <div class="glow-button">Сообщение</div>
+      <div class="glow-button">Подписаться</div>
+    </div>
+    </div>
+    <!-- some social links to show off -->
+
+  </aside>
+</section>
+
+<section id="section-4">
+  <a class="glassIco" href="#"><img id="log" src="twitter.png"></a><br>
+  <div id="counter">
+  <script src="script4.js"></script>
+  </div>
+  <br><h2>Постов</h2>
+
+  <a class="glassIco" href="#"><img id="log1" src="inst.png"><i class=""></i></a>
+  <div id="counter1">
+    <script src="script4.js"></script>
+  </div>
+  <br><h2>Лайков</h2>
+
+  <a class="glassIco" href="#"><img id="log2" src="facebook.png"><i class=""></i></a>
+  <div id="counter2">
+    <script src="script4.js"></script>
+  </div>
+  <br><h2>Друзей</h2>
+  <a class="glassIco" href="#"><img id="log3" src="vk.png"><i class=""></i></a>
+  <div id="counter3">
+    <script src="script4.js"></script>
+  </div>
+  <br><h2>Сообщений</h2>
+</section>
+
+<section id="section-5">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="column" id="main">
+            <h1><center>Логин</center></h1><br><br>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1"> </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Почта">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleInputPassword1"></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+              </div>
+              <button type="submit" class="btn btn-primary"><a href="https://www.google.ru/">Войти</a></button>
+            </form>
+            <p>Забыли пароль? <a href="#">Перейти</a></p>
+            <p>Ещё нет аккаунта?<a href="#">Зарегистрироваться</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="section-6">
+  <h1 style="color: black">Star Rating System</h1>
+  <br><br>
+
+  <div class="star-source">
+    <svg>
+      <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+        <stop stop-color="#bf209f" offset="0%"></stop>
+        <stop stop-color="#d62a9d" offset="60%"></stop>
+        <stop stop-color="#ED009E" offset="100%"></stop>
+      </linearGradient>
+      <symbol id="star" viewBox="153 89 106 108">
+        <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+      </symbol>
+    </svg>
+  </div>
+
+
+  <div class="star-container">
+    <input type="radio" name="star" class="double-border-button" id="five">
+    <label for="five">
+      <svg class="star">
+        <use xlink:href="#star"/>
+      </svg>
+
+    </label>
+
+    <input type="radio" name="star" id="four">
+    <label for="four">
+      <svg class="star">
+        <use xlink:href="#star"/>
+      </svg>
+    </label>
+    <input type="radio" name="star" id="three">
+    <label for="three">
+      <svg class="star">
+        <use xlink:href="#star"/>
+      </svg>
+    </label>
+    <input type="radio" name="star" id="two">
+    <label for="two">
+      <svg class="star">
+        <use xlink:href="#star" />
+      </svg>
+    </label>
+    <input type="radio" name="star" id="one">
+    <label for="one">
+      <svg class="star">
+        <use xlink:href="#star" />
+      </svg>
+    </label>
+  </div>
+
+
+
+  <div id="openModal1" class="modal1">
+    <div class="modal1-dialog">
+      <div class="modal1-content">
+        <div class="modal1-header">
+          <a href="#close" title="Close" class="close">×</a>
+        </div>
+        <div class="modal1-body">
+
+        <div class="cardmif">
+    <h2 style="color:black">ЭТО ШЕДЕВР😍</h2>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label style="color:black">Поделитесь своим опытом</label>
+          <textarea></textarea>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="col">
+        <input style="color: black" type="submit" value="Отправить">
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- openModal - id модального окна (элемента div) -->
+  <a href="#openModal1" class="double-border-button"><center>Показать окно</center></a><br><br><br><br><br><br>
+<br><br>
+</section>
+
+</body>
+</html>
